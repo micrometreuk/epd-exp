@@ -1,0 +1,11 @@
+#!/bin/sh -xv
+echo "Deploying master branch to production..."
+git --work-tree=/home/warsong/public/elmbridge --git-dir=/home/warsong/hooks/elmbridge.git checkout -f
+cd ~/public/elmbridge
+docker-compose down -v
+docker-compose rm -f
+docker-compose pull
+docker-compose up -d --build
+echo "Successfully deployed master branch ."
+
+exit

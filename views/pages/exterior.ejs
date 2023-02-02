@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container-fluid" style="font-family: font-sans-serif">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+}
+#nav1{
+background-color: #6c757d;
+}
+
+
+#nav2{
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+div#texttop {
+	color: #fff;
+	width: 30%;
+	top: 50%;
+	left: 20%;
+  transform: translateY(-50%) translateX(-50%);
+	padding: 2rem;
+	font-family: Oxygen, sans-serif;
+  position:absolute;
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 100;
+}
+p {
+   line-height: 1.6;
+  }
+}
+@media all and (max-width: 300px) {
+	div#texttop { display: none; }
+}
+#animated-bg:before {
+content:"";
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+background-color: #4b555f;
+opacity:0.3;
+}
+
+
+#footerNav{
+background-color: #6c757d;
+}
+
+
+#header1-bg {
+  transition: background 6s;
+  min-height:100vh;
+  position:relative;
+}
+div#texttop {
+	color: #fff;
+	width: 30%;
+	top: 50%;
+	left: 20%;
+  transform: translateY(-50%) translateX(-50%);
+	padding: 2rem;
+	font-family: Oxygen, sans-serif;
+  position:absolute;
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 100;
+}
+p {
+   line-height: 1.6;
+  }
+}
+@media all and (max-width: 300px) {
+	div#texttop { display: none; }
+}
+#header1-bg:before {
+content:"";
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+background-color: #4b555f;
+opacity:0.3;
+}
+</style>
+<section id="header-bg" style="background: url(&quot;/img/slide/exterior-1.jpg&quot;) center center / cover no-repeat;">
+    <div class="container-fluid">
+        <div id="header1-bg">
+            <div id="texttop">
+                <h1 class="display-4 lh-1 mb-4">
+                    Exterior </br>
+                    Decoration
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light" id="painting">
+<div class="container-fluid">
+    <div class="py-5">
+            <div class="row py-5">
+                <div class="mx-auto col-lg-10">
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">
+We offer quality exterior decorating from painting brickwork, doors, gates, fences, decking, garden furniture, sheds, and outbuildings to balconies, wall boundaries and swimming pools.
+We cover all aspects of exterior finishing including restoration and treatment of windows and other woodwork.
+
+                        </br>
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+</body>
+</html>

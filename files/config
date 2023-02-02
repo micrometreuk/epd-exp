@@ -1,0 +1,5 @@
+Host droplet-01
+    StrictHostKeyChecking no
+    Hostname 134.209.21.147
+    User warsong
+    Port 2244
